@@ -1,4 +1,2 @@
-"# stock-trend-predictor" 
-"# stock-trend-predictor" 
-"# stock-trend-predictor" 
-"# Project-1" 
+"# stock-trend-predictor-using-tft" 
+"# stock-trend-predictor-using-tft" 
