@@ -1,8 +1,10 @@
-yfinance
-pandas
+streamlit==1.48.1
 numpy
-scikit-learn
-tensorflow
-keras
+pandas
 matplotlib
+yfinance
+scikit-learn
+tensorflow==2.20.0
+keras==3.13.0
+h5py
 joblib

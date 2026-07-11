@@ -2,7 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from keras.models import load_model
+import tensorflow as tf
+from tensorflow.keras.models import load_model
+# Use tf.keras to avoid import resolution issues
 import streamlit as st
 import yfinance as yf
 from sklearn.preprocessing import MinMaxScaler
@@ -115,9 +117,7 @@ scaler.fit(data_training)
 # =====================
 # Load Model
 # =====================
-model = load_model('tft_model.h5')
-
-# =====================
+model = load_model("tft_model_patched.h5", compile=False)# =====================
 # Prepare Test Data
 # =====================
 past_100_days = data_training.tail(100)
